@@ -15,8 +15,8 @@ class Excitedstate {
       return state;
     }
 
-    const arrayOfCounter = state.map(this.checkExcitedNeighbors);
-    const newComputedCellsState = this.computeNewCellStates(arrayOfCounter);
+    const arrayOfCounters = state.map(this.checkExcitedNeighbors);
+    const newComputedCellsState = this.computeNewCellStates(arrayOfCounters);
 
     return this.proceed(--steps, newComputedCellsState);
   };
@@ -64,8 +64,8 @@ class Excitedstate {
     return counter;
   };
 
-  private computeNewCellStates = (arrayOfCounter: number[]) => {
-    return arrayOfCounter.map((value) =>
+  private computeNewCellStates = (arrayOfCounters: number[]) => {
+    return arrayOfCounters.map((value) =>
       value === 1 ? State.EXCITED : State.QUIET
     );
   };
