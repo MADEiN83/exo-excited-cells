@@ -1,7 +1,10 @@
-const ExcitedCells = require("../index");
+import ExcitedCells from "../";
 
 describe("ExcitedCells tests", () => {
-  it("todo", () => {
+  const service = new ExcitedCells();
+
+  it("should ... when...", () => {
+    const output = service.proceed();
     expect("ok").toBe("non");
   });
 });

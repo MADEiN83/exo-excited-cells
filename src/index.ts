@@ -1,3 +1,5 @@
-class ExcitedCells {}
+class ExcitedCells {
+  proceed = () => {};
+}
 
-module.exports = ExcitedCells;
+export default ExcitedCells;
