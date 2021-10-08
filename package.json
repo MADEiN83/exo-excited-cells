@@ -1,0 +1,28 @@
+{
+  "name": "exo-excited-cells",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MADEiN83/exo-excited-cells.git"
+  },
+  "keywords": [],
+  "author": "Anthony DI STEFANO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MADEiN83/exo-excited-cells/issues"
+  },
+  "homepage": "https://github.com/MADEiN83/exo-excited-cells#readme",
+  "dependencies": {
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.2.4"
+  }
+}
