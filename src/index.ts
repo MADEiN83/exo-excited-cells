@@ -3,7 +3,7 @@ enum State {
   EXCITED,
 }
 
-class Excitedstate {
+class ExcitedCells {
   private steps: number;
   private state: number[];
 
@@ -71,4 +71,4 @@ class Excitedstate {
   };
 }
 
-export default Excitedstate;
+export default ExcitedCells;
