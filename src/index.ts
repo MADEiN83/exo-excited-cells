@@ -11,20 +11,20 @@ class Excitedstate {
     this.steps = steps;
     this.state = state;
 
-    if (this.stepsEqualsZero()) {
+    if (this.stepsEqualZero()) {
       return state;
     }
 
     const arrayOfCounter = state.map(this.checkExcitedNeighbors);
     const newComputedCellsState = this.computeNewCellStates(arrayOfCounter);
 
-    return newComputedCellsState;
+    return this.proceed(--steps, newComputedCellsState);
   };
 
   /**
    * Utilities.
    */
-  private stepsEqualsZero = (): boolean => !this.steps;
+  private stepsEqualZero = (): boolean => !this.steps;
 
   private checkExcitedNeighbors = (_, index): number => {
     const cellPositions = this.computeAllCellPositions(index);

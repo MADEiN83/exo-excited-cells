@@ -26,4 +26,10 @@ describe("ExcitedCells tests", () => {
     expect(output).toBeDefined();
     expect(output).toEqual([1, 0, 1, 0]);
   });
+
+  it("should return `[0, 0, 0, 0]` when steps=2 and state=[1, 0, 1, 1]", () => {
+    const output = service.proceed(2, [1, 0, 1, 1]);
+    expect(output).toBeDefined();
+    expect(output).toEqual([0, 0, 0, 0]);
+  });
 });
