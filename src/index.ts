@@ -1,5 +1,7 @@
 class ExcitedCells {
-  proceed = () => {};
+  proceed = (stepsCount: number, series: number[]): number[] => {
+    return [];
+  };
 }
 
 export default ExcitedCells;
